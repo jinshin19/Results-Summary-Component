@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: hanken;
+  src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body, .wrapper, .result-wrapper, .wrapper .cols-2 ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+body {
+  font-size: 18px;
+  font-family: hanken;
+  height: 100vh;
+}
+
+.wrapper {
+  box-shadow: 5px 40px 40px hsla(241, 100%, 89%, 0.377);
+  border-radius: 30px;
+  width: 850px;
+}
+
+.wrapper .cols-2 {
+  width: 50%;
+  padding: 1em;
+  text-align: center;
+}
+
+.wrapper .cols-2:nth-child(1) {
+  border-radius: 40px;
+  background: hsl(252, 100%, 67%);
+  background: hsl(241, 81%, 54%);
+}
+.wrapper .cols-2:nth-child(1) h2,
+.wrapper .cols-2:nth-child(1) p {
+  color: #cecece;
+}
+.wrapper .cols-2 p:nth-child(4) {
+  margin: 0 auto 2em;
+  width: 65%;
+}
+
+.wrapper .cols-2 .result-wrapper {
+  flex-direction: column;
+}
+.wrapper .cols-2 .result-wrapper h1 {
+  font-size: 4em;
+  color: white;
+  font-weight: 800px;
+}
+
+.wrapper .cols-2:nth-child(1) .great {
+  font-weight: 700;
+  color: white;
+  font-size: xx-large;
+}
+
+.wrapper .cols-2 .result-wrapper {
+  border-radius: 100em;
+  background: hsla(241, 72%, 46%, 100%);
+  width: 60%;
+  height: 230px;
+  padding: 1em 0;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.wrapper .cols-2:nth-child(2) h2{
+  color: black;
+  text-align: left;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.wrapper .cols-2 ul {
+  width: auto;
+  height: auto;
+}
+
+.wrapper .cols-2 ul li {
+  width: 85%;
+  padding: 1em 0;
+  margin: 1em auto;
+  justify-content: space-between;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 1em;
+}
+
+.wrapper .cols-2 ul li:nth-child(1) {background: hsl(0deg 100% 67% / 18%);}
+.wrapper .cols-2 ul li:nth-child(2) {background: hsl(39deg 100% 56% / 18%);}
+.wrapper .cols-2 ul li:nth-child(3) {background: hsl(166deg 100% 37% / 18%);}
+.wrapper .cols-2 ul li:nth-child(4) {background: hsl(234 85% 45% / 18%);}
+
+.wrapper .cols-2 ul li .reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.wrapper .cols-2 ul li .memory {
+  color: hsl(39, 100%, 56%)
+}
+
+.wrapper .cols-2 ul li .verbal {
+  color: hsl(166, 100%, 37%);
+}
+
+.wrapper .cols-2 ul li .visual {
+  color: hsl(234, 85%, 45%);
+}
+
+.wrapper .cols-2 ul li table {
+  color: black;
+}
+.wrapper .cols-2 ul li table td:nth-child(2) {
+  padding: 0 .5em;
+}
+
+.wrapper .cols-2 h2 {
+  padding: 1em 0;
+}
+
+.wrapper .cols-2 button {
+  width: 85%;
+  margin: 1em auto;
+  background: hsl(224, 30%, 27%);
+  color: inherit;
+  font-weight: 600;
+  font-size: inherit;
+  padding: 1em 0;
+  border-radius: 100em;
+}
