@@ -13,6 +13,10 @@
   src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
+.wrapper .cols-2 button:active {
+  background: hsl(241, 81%, 54%);
+}
+
 body, .wrapper, .result-wrapper, .wrapper .cols-2 ul li {
   display: flex;
   flex-direction: row;
@@ -41,7 +45,6 @@ body {
 
 .wrapper .cols-2:nth-child(1) {
   border-radius: 40px;
-  background: hsl(252, 100%, 67%);
   background: hsl(241, 81%, 54%);
 }
 .wrapper .cols-2:nth-child(1) h2,
@@ -100,10 +103,10 @@ body {
   padding: 1em;
 }
 
-.wrapper .cols-2 ul li:nth-child(1) {background: hsl(0deg 100% 67% / 18%);}
-.wrapper .cols-2 ul li:nth-child(2) {background: hsl(39deg 100% 56% / 18%);}
-.wrapper .cols-2 ul li:nth-child(3) {background: hsl(166deg 100% 37% / 18%);}
-.wrapper .cols-2 ul li:nth-child(4) {background: hsl(234 85% 45% / 18%);}
+.wrapper .cols-2 ul li:nth-child(1) {background: hsl(0deg 100% 67% / 5%);}
+.wrapper .cols-2 ul li:nth-child(2) {background: hsl(39deg 100% 56% / 5%);}
+.wrapper .cols-2 ul li:nth-child(3) {background: hsl(166deg 100% 37% / 5%);}
+.wrapper .cols-2 ul li:nth-child(4) {background: hsl(234 85% 45% / 5%);}
 
 .wrapper .cols-2 ul li .reaction {
   color: hsl(0, 100%, 67%);
@@ -132,13 +135,51 @@ body {
   padding: 1em 0;
 }
 
+.wrapper .cols-2 ul li table td span {
+  color: #a3a3a3;
+}
+
 .wrapper .cols-2 button {
   width: 85%;
-  margin: 1em auto;
+  margin: 1em auto 1.5em;
   background: hsl(224, 30%, 27%);
   color: inherit;
   font-weight: 600;
   font-size: inherit;
   padding: 1em 0;
   border-radius: 100em;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: block;
+  }
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .wrapper .cols-2 {
+    width: 100%;
+  }
+  .wrapper .cols-2:nth-child(1) {
+    border-radius:  0 0 40px 40px;
+    padding: 0;
+  }
+  .wrapper .cols-2:nth-child(1) h2, .wrapper .cols-2:nth-child(2) h2 {
+    font-size: 1.2em;
+  }
+  .wrapper .cols-2 .result-wrapper {
+    width: 40%;
+    height: 150px;
+  }
+  .wrapper .cols-2 .result-wrapper h1 {
+    font-size: 3.3em;
+  }
+  .wrapper .cols-2 p:nth-child(4) {
+    width: 85%;
+  }
+  .wrapper .cols-2 ul li {
+    width: 90%;
+  }
 }
