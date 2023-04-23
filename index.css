@@ -45,7 +45,8 @@ body {
 
 .wrapper .cols-2:nth-child(1) {
   border-radius: 40px;
-  background: hsl(241, 81%, 54%);
+  /* background: hsl(241, 81%, 54%); */
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 .wrapper .cols-2:nth-child(1) h2,
 .wrapper .cols-2:nth-child(1) p {
@@ -73,7 +74,7 @@ body {
 
 .wrapper .cols-2 .result-wrapper {
   border-radius: 100em;
-  background: hsla(241, 72%, 46%, 100%);
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   width: 60%;
   height: 230px;
   padding: 1em 0;
